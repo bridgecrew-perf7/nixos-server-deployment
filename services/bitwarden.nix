@@ -5,7 +5,7 @@ in {
   services.bitwarden_rs = {
     enable = true;
     dbBackend = "postgresql";
-    config.signups_allowed = false;
+    config.signups_allowed = true;
     config.rocketPort = port;
     config.domain = "https://bw.whatdaheck.de";
     #config.databaseUrl = "postgresql://bitwardenuser:${dbPassword}@localhost/bitwarden";
@@ -29,7 +29,7 @@ in {
   # enable postgresql backup service for "bitwarden_rs" database
   services.postgresqlBackup = {
     enable = true;
-    databases = [ "bitwarden_rs" ];
+    databases = [ "bitwarden" ];
   };
 
   # Enable nginx

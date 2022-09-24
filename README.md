@@ -1,5 +1,5 @@
 # nixos-server-deployment
-Full NixOS deployment for VPS w/ Bitwarden, PSQL and NGINX
+Full NixOS deployment for VPS w/ Bitwarden RS, PSQL and NGINX
 
 # deploy-host.sh
 Deploys localhost based on nix files

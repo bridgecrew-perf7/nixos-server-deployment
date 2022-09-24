@@ -19,7 +19,8 @@
     vim
     wget
     git
-    #docker
+    #docker docker-compose
+    tmux
   ];
 
 }
